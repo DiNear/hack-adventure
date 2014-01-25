@@ -1,5 +1,5 @@
 var story = ["Part UNO", "Part DEUX", "PART DREI"];
-var id = ["textInput2", "textInput3"];
+var isEnd = 0;
 var i = 0;
 
 //Story parts
@@ -12,7 +12,10 @@ storyPieces = [ new StoryPiece("It all started when our favourite", "Occupation"
     new StoryPiece(", Billy the", "Animal species"),
     new StoryPiece(", woke up in a", "Location"),
     new StoryPiece(". Disoriented, our hero does a thousand", "Exercise"),
-    new StoryPiece(" to clear his head. Noticing a TV, he starts watching", "TV/Anime series")];
+    new StoryPiece(" while listening to", "Song name"),
+    new StoryPiece(" on repeat to clear his head. Noticing a TV, he starts watching", "TV/Anime series"),
+    new StoryPiece(" only to find out his favourite character had been killed by", "Famous person"),
+    new StoryPiece(". Billy cries himself to sleep.", "The end")];
     
 //End story parts
 
@@ -25,8 +28,8 @@ function dispStory(input){
     }
     else{
         document.getElementById("derf").innerHTML += " " + input;
-        document.getElementById("derf").innerHTML += ". The End!";
         document.getElementById("textInput1").placeholder = "No more, I beg you!";
+        isEnd = 1;
     }
     
 }
