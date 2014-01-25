@@ -12,31 +12,41 @@
 </head>
 
 <body>
-<div id="head_space" class="h_space"></div>
+
+<div id="head_space" class="header"></div>
 <div id="body_space" class="story"></div>
+<div id="logo" class="logo"><img src = "resources/logo.png" height = "100%" width = "100%"></div>
+<div id="youtube_background" class="youtube_background"><img src = "resources/youtube_border.png" height= "100%" width = "100%"></div>
+
 <div id="text_space" class="text">
-	<p class="story" id="derf">
+	<p class="story" id="paragraph">
 		<script>
 			window.onload = dispStory("");
 		</script>
 	</p>
-	<form class="story">
+	
+</div>
+
+<div id="input_bar">
+	<form class="text_box">
 	<input onkeypress="if(event.keyCode == 13){dispStory(userInput1.value);
             search(userInput1.value);
             clearInput(userInput1);
             return (event.keyCode != 13);}"
 			id="textInput1"
+			class = "input_bar"
 			name="userInput1" value="" type="text" 
-			style="display:inline;" name="answer" 
+			style="display:inline;" name="answer"
 			maxlength=20 placeholder="Press enter to start"
-            autofocus>
+            autofocus />
 	</form>
 </div>
+
 <div id="youtube_space" class="youtube">
-    <iframe seamless="seamless" id="ytplayer" type="text/html" width = "700" height = "420" frameborder="5"
-        src="http://www.youtube.com/embed/3fQlYYZQBM4?autoplay=0">
+    <iframe seamless="seamless" id="ytplayer" type="text/html" width = "100%" height = "100%" frameborder="5" src="http://www.youtube.com/embed/3fQlYYZQBM4?autoplay=0">
     <p>This browser does not support this function...Stop using IE</p>
     </iframe>
 </div>
+
 </body>
 </html>

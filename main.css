@@ -11,7 +11,7 @@ body
 	padding: 0px;
 	background-image: url('resources/background.jpg');
 	background-size: 100% 100%;
-	overflow: hidden;
+	overflow: hidden;	
 }
 
 form.story
@@ -20,7 +20,7 @@ form.story
 	padding-left: 50px;
 	padding-right: 50px;
 	padding-bottom: 5%;
-	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-family: "Helvetica", cursive, sans-serif;
 	font-size: 16px;
 }
 
@@ -29,19 +29,29 @@ p.story
 	margin-top: 100px;
 	margin-left: 50px;
 	margin-right: 50px;
-	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-family: "Helvetica", cursive, sans-serif;
 	font-size: 24px;
 	max-height: 60%;
 	overflow: hidden;
 }
 
-div.h_space
+div.logo
 {
 	position: fixed;
-	top: 0px;
-	left: 0px;
-	height: 100px;
-	width: 900px;
+	top: 10px;
+	left: 15px;
+
+	height: 30px;
+	width: 75px;
+}
+
+div.header
+{
+	background-color: white;
+	opacity: 0.8;
+	position: fixed;
+	height: 50px;
+	width: 100%;
 	float: left;
 	margin: auto;
 	padding: auto;
@@ -50,15 +60,40 @@ div.h_space
 div.story
 {
 	background-color: black;
-	opacity: 0.6;
+	opacity: 0.7;
 	text-align: justified;
 	position: fixed;
-	top: 0px;
-	right: 125px;
+	top: 50px;
+	right: 0px;
 	color: white;
-	width: 700px;
+	width: 50%;
 	height: 100%;
 	float: left;
+}
+input.input_bar
+{
+	position: fixed;
+	right: 10%;
+	bottom:10%;
+	width: 30%;
+	height:5%;
+
+	display: block;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 8px;
+    color: #333;
+    box-shadow: 
+        inset 0 2px 0 rgba(0,0,0,.2), 
+        0 0 4px rgba(0,0,0,0.1);
+}
+input.input_bar:focus
+{
+	outline: none;
+    box-shadow: 
+        inset 0 2px 0 rgba(0,0,0,.2), 
+        0 0 4px rgba(0,0,0,0.1), 
+        0 0 5px 1px #51CBEE;
 }
 
 div.text
@@ -66,9 +101,9 @@ div.text
 	text-align: justified;
 	position: fixed;
 	top: 0px;
-	right: 125px;
+	right: 0px;
 	color: white;
-	width: 700px;
+	width: 50%;
 	height: 100%;
 	float: left;
 }
@@ -76,9 +111,20 @@ div.text
 div.youtube
 {
 	position: fixed;
-	top: 250px;
-	left: 125px;
+	top: 33.5%;
+	left: 7%;
 	float: left;
-	height: 420px;
-	width: 700px;
+	height: 42.5%;
+	width: 36.25%;
+	z-index: 2;
+}
+div.youtube_background
+{
+	position: fixed;
+	top: 30%;
+	left: 5%;
+	float: left;
+	height: 50%;
+	width: 40%;
+	z-index: 1;
 }

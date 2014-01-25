@@ -22,12 +22,12 @@ storyPieces = [ new StoryPiece("It all started when our favourite", "Occupation"
 function dispStory(input){
     if(i < storyPieces.length) {
         document.getElementById("textInput1").placeholder = storyPieces[i].partOfSpeech;
-        document.getElementById("derf").innerHTML += " " + input; 
-        document.getElementById("derf").innerHTML += " " + storyPieces[i].presetText;
+        document.getElementById("paragraph").innerHTML += " " + input; 
+        document.getElementById("paragraph").innerHTML += " " + storyPieces[i].presetText;
         i++;
     }
     else{
-        document.getElementById("derf").innerHTML += " " + input;
+        document.getElementById("paragraph").innerHTML += " " + input;
         document.getElementById("textInput1").placeholder = "No more, I beg you!";
         isEnd = 1;
     }
@@ -39,7 +39,7 @@ function clearInput(element) {
 }
 
 function dispInput(input){
-	document.getElementById("derf").innerHTML += " " + input;
+	document.getElementById("paragraph").innerHTML += " " + input;
 }
 
 function deleteFunc(funcID){
