@@ -73,7 +73,7 @@ input.input_bar
 	width: 30%;
 	height:5%;
 	font-size: 24px;
-
+	
 	display: block;
     border: none;
     border-radius: 20px;
@@ -83,6 +83,7 @@ input.input_bar
         inset 0 2px 0 rgba(0,0,0,.2), 
         0 0 4px rgba(0,0,0,0.1);
 }
+
 input.input_bar:focus
 {
 	outline: none;
