@@ -14,12 +14,12 @@
 <div id="head_space" class="h_space"></div>
 <div id="body_space" class="story"></div>
 <div id="text_space" class="text">
-<form>
 	<p class="story" id="derf">
 		<script>
 			window.onload = dispStory("");
 		</script>
 	</p>
+	<form class="story">
 	<input onkeypress="if(event.keyCode == 13){dispStory(userInput1.value);
             search(userInput1.value);
             clearInput(userInput1);
@@ -29,7 +29,7 @@
 			style="display:inline;" name="answer" 
 			maxlength=20 placeholder="Press enter to start"
             autofocus>
-</form>
+	</form>
 </div>
 <div id="youtube_space" class="youtube">
     <iframe id="ytplayer" type="text/html" width = "700" height = "420" frameborder="5"
