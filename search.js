@@ -39,8 +39,5 @@ function showResponse(response) {
         vidId = defaultVidId;
 		return vidId;
     }
-<<<<<<< HEAD
     return "http://youtube.com/watch?v=" + vidId;
-=======
->>>>>>> 2dccb2a7e035bb8a214a314ab91ee21dfc217acb
 }
