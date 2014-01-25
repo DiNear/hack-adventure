@@ -38,5 +38,5 @@ function showResponse(response) {
     else{
         vidId = defaultVidId;
     }
-    console.log("http://youtube.com/watch?v=" + vidId);
+    return "http://youtube.com/watch?v=" + vidId;
 }
