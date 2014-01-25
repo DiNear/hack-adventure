@@ -1,0 +1,72 @@
+html
+{
+	height: 100%;
+	overflow: hidden;
+}
+
+body
+{
+	background-color: white;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+form.story
+{
+	padding-top: 5%;
+	padding-left: 21%;
+	padding-right: 21%;
+	padding-bottom: 5%;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 110%;
+}
+
+p.story
+{
+	margin-top: 7%;
+	margin-left: 21%;
+	margin-right: 18%;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 120%;
+	max-height: 60%;
+	overflow: hidden;
+}
+
+div.youtube
+{
+	height: 50%;
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid red;
+}
+
+div.story
+{
+	background-image: url('story_background.jpg');
+	background-size: 100% 100%;
+	text-align: justified;
+	color: white;
+	width: 50%;
+	height: 50%;
+	border: 1px solid white;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.lside
+{
+	float: left;
+	height: 100%;
+	width: 25%;
+	border: 1px solid blue;
+}
+
+div.rside
+{
+	float: right;
+	height: 100%;
+	width: 25%;
+	border: 1px solid black;
+}
