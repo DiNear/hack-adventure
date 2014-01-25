@@ -1,15 +1,17 @@
 const MAX_RESULTS = 25;
+const ApiKey = 'AIzaSyA13XKn_DTKVIuBoYXyFYPs7LerhIXnXaM';
 
 var query = 'Eminem';
 var defaultVidId = 'dQw4w9WgXcQ';
 var duration = 'short';
+
 
 function onClientLoad() {
     gapi.client.load('youtube', 'v3', onYouTubeApiLoad);
 }
 
 function onYouTubeApiLoad() {
-    gapi.client.setApiKey('AIzaSyA13XKn_DTKVIuBoYXyFYPs7LerhIXnXaM');
+    gapi.client.setApiKey(ApiKey);
     search();
 }
 
