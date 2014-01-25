@@ -37,5 +37,12 @@ function showResponse(response) {
     else{
         vidId = defaultVidId;
     }
-    return "http://youtube.com/watch?v=" + vidId;
+    changeVideo("http://youtube.com/watch?v=" + vidId);
+}
+
+function changeVideo(vidID)
+{
+    var vidProperty = vidID.concat('?autoplay=1');
+    console.log(vidProperty);
+    document.getElementById('ytplayer').src = vidProperty;
 }
