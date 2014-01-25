@@ -31,7 +31,6 @@ function dispStory(input){
         document.getElementById("textInput").placeholder = "No more, I beg you!";
         isEnd = 1;
     }
-    document.getElementById("paragraph").scrollTop = document.getElementById("paragraph").scrollHeight;
 }
 
 function clearInput(element) {
