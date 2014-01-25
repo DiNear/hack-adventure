@@ -12,23 +12,20 @@
 <div id="left_space"></div>
 <div id="body_space">
 <form>
+<div style="float: left">
 	<p id="derf">
 		<script>
 			window.onload = dispStory();
 		</script>
-		<input onkeypress="if(event.keyCode == 13){dispInput(userInput.value)}"
-				name="userInput" value="" type="text" 
-				style='display:inline;' name="answer" 
-				maxlength=20 placeholder="text input">
 	</p>
-</form>
-<p id="derp"></p>
-<script>
-	window.onload = dispStory();
-</script>
-<p id="dino"></p>
-<form>
-	<input type="button" id="testing" name="random" value="TEST" onclick="deleteFunc()">
+</div>
+<div style="float: left; padding-top: 10px">
+	<input onkeypress="if(event.keyCode == 13){dispInput(userInput1.value); dispStory(); return (event.keyCode != 13);}"
+			id="textInput1"
+			name="userInput1" value="" type="text" 
+			style="display:inline;" name="answer" 
+			maxlength=20 placeholder="text input 1">
+</div>
 </form>
 </div>
 <div id="youtube_space"></div>
