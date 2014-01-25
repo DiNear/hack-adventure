@@ -14,25 +14,23 @@ body
 	overflow: hidden;	
 }
 
-form.story
+div.story
 {
-	padding-top: 10px;
-	padding-left: 50px;
-	padding-right: 50px;
-	padding-bottom: 5%;
-	font-family: "Helvetica", cursive, sans-serif;
-	font-size: 16px;
-}
-
-p.story
-{
-	margin-top: 100px;
+	margin-top: 50px;
 	margin-left: 50px;
 	margin-right: 50px;
 	font-family: "Helvetica", cursive, sans-serif;
 	font-size: 24px;
 	max-height: 60%;
 	overflow: hidden;
+}
+
+div.chapter_title
+{
+	font-family: "Helvetica", cursive, sans-serif;
+	font-size: 30px;
+	text-align: center;
+	margin-top: 50px;
 }
 
 div.logo
@@ -57,18 +55,15 @@ div.header
 	padding: auto;
 }
 
-div.story
+div.story_background
 {
 	background-color: black;
 	opacity: 0.7;
-	text-align: justified;
 	position: fixed;
 	top: 50px;
 	right: 0px;
-	color: white;
 	width: 50%;
 	height: 100%;
-	float: left;
 }
 input.input_bar
 {
@@ -101,12 +96,11 @@ div.text
 {
 	text-align: justified;
 	position: fixed;
-	top: 0px;
+	top: 50px;
 	right: 0px;
 	color: white;
 	width: 50%;
 	height: 100%;
-	float: left;
 }
 
 div.youtube
