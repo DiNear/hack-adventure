@@ -1,7 +1,6 @@
 const MAX_RESULTS = 25;
 const ApiKey = 'AIzaSyA13XKn_DTKVIuBoYXyFYPs7LerhIXnXaM';
 
-var query = 'Eminem';
 var defaultVidId = 'dQw4w9WgXcQ';
 var duration = 'short';
 
@@ -14,7 +13,7 @@ function onYouTubeApiLoad() {
     gapi.client.setApiKey(ApiKey);
 }
 
-function search() {
+function search(query) {
     var request = gapi.client.youtube.search.list({
         part: 'id',
         q: query,
@@ -37,7 +36,7 @@ function showResponse(response) {
     else{
         vidId = defaultVidId;
     }
-    changeVideo("http://youtube.com/watch?v=" + vidId);
+    changeVideo("http://youtube.com/embed/" + vidId);
 }
 
 function changeVideo(vidID)
@@ -46,3 +45,5 @@ function changeVideo(vidID)
     console.log(vidProperty);
     document.getElementById('ytplayer').src = vidProperty;
 }
+
+
