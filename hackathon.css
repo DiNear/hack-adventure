@@ -57,7 +57,7 @@ div.story
 	right: 125px;
 	color: white;
 	width: 700px;
-	height: 1000px;
+	height: 100%;
 	float: left;
 }
 
@@ -69,7 +69,7 @@ div.text
 	right: 125px;
 	color: white;
 	width: 700px;
-	height: 1000px;
+	height: 100%;
 	float: left;
 }
 
