@@ -29,15 +29,14 @@
 
 <div id="input_bar">
 	<form class="text_box">
-	<input onkeypress="if(event.keyCode == 13){dispStory(userInput1.value);
-            search(userInput1.value);
-            clearInput(userInput1);
+	<input onkeypress="if(event.keyCode == 13){dispStory(userInput.value);
+            search(userInput.value);
+            clearInput(userInput);
             return (event.keyCode != 13);}"
-			id="textInput1"
+			id="textInput"
 			class = "input_bar"
-			name="userInput1" value="" type="text" 
-			style="display:inline;" name="answer"
-			maxlength=20 placeholder="Press enter to start"
+			name="userInput" value="" type="text"
+			maxlength=40 placeholder="Press enter to start"
             autofocus />
 	</form>
 </div>

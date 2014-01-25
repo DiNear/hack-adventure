@@ -41,7 +41,7 @@ function showResponse(response) {
 
 function changeVideo(vidID)
 {
-    var vidProperty = vidID.concat('?autoplay=1');
+    var vidProperty = vidID.concat('?autoplay=1&start=5');
     console.log(vidProperty);
     document.getElementById('ytplayer').src = vidProperty;
 }

@@ -21,14 +21,14 @@ storyPieces = [ new StoryPiece("It all started when our favourite", "Occupation"
 
 function dispStory(input){
     if(i < storyPieces.length) {
-        document.getElementById("textInput1").placeholder = storyPieces[i].partOfSpeech;
+        document.getElementById("textInput").placeholder = storyPieces[i].partOfSpeech;
         document.getElementById("paragraph").innerHTML += " " + input; 
         document.getElementById("paragraph").innerHTML += " " + storyPieces[i].presetText;
         i++;
     }
     else{
         document.getElementById("paragraph").innerHTML += " " + input;
-        document.getElementById("textInput1").placeholder = "No more, I beg you!";
+        document.getElementById("textInput").placeholder = "No more, I beg you!";
         isEnd = 1;
     }
     
