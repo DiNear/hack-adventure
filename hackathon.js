@@ -29,6 +29,7 @@ function dispStory(input){
     else{
         document.getElementById("derf").innerHTML += " " + input;
         document.getElementById("textInput1").placeholder = "No more, I beg you!";
+        isEnd = 1;
     }
     
 }
