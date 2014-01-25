@@ -9,7 +9,7 @@ body
 	height: 100%;
 	margin: 0px;
 	padding: 0px;
-	background-image: url('background-5-point.jpg');
+	background-image: url('resources/background-5-point.jpg');
 	background-size: 100% 100%;
 	overflow: hidden;
 }
