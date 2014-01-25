@@ -7,15 +7,16 @@
 <script language="JavaScript" type="text/javascript" src="hackathon.js"></script>
 <script language="JavaScript" type="text/javascript" src="youtube.js"></script>
 <script src="https://apis.google.com/js/client.js?onload=onClientLoad" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="hackathon.css">
 </head>
 
 <body>
-<div id="header_space"></div>
-<div id="left_space"></div>
-<div id="body_space">
+<div id="left_space" class="lspace"></div>
+<div id="right_space" class="rspace"></div>
+<div id="body_space" class="story">
 <form>
 <div style="float: left">
-	<p id="derf">
+	<p class="story" id="derf">
 		<script>
 			window.onload = dispStory("");
 		</script>
@@ -23,7 +24,6 @@
 	<input onkeypress="if(event.keyCode == 13){dispStory(userInput1.value);
             search(userInput1.value);
             clearInput(userInput1);
-            if(isEnd){userInput1.disabled;}
             return (event.keyCode != 13);}"
 			id="textInput1"
 			name="userInput1" value="" type="text" 
@@ -33,14 +33,11 @@
 </div>
 </form>
 </div>
-<div id="youtube_space">
+<div id="youtube_space" class="youtube">
     <iframe id="ytplayer" type="text/html" width = "700" height = "420" frameborder="5"
         src="http://www.youtube.com/embed/3fQlYYZQBM4?autoplay=0">
     <p>This browser does not support this function...Stop using IE</p>
     </iframe>
 </div>
-
-<div id="right_space"></div>
-<div id="footer_space"></div>
 </body>
 </html>
