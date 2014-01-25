@@ -12,7 +12,6 @@ function onClientLoad() {
 
 function onYouTubeApiLoad() {
     gapi.client.setApiKey(ApiKey);
-    search();
 }
 
 function search() {
@@ -34,9 +33,14 @@ function showResponse(response) {
     var vidId;
     if (response.pageInfo.totalResults != 0){
         vidId = response.items[random].id.videoId;
+		return vidId;
     }
     else{
         vidId = defaultVidId;
+		return vidId;
     }
+<<<<<<< HEAD
     return "http://youtube.com/watch?v=" + vidId;
+=======
+>>>>>>> 2dccb2a7e035bb8a214a314ab91ee21dfc217acb
 }

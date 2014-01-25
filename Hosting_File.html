@@ -2,18 +2,33 @@
 <html>
 <head>
 <title> uWaterloo Hackathon 2014 </title>
-<meta title="Description" content="uWaterloo Hackathon 2014 team JennieH2 and Co.">
-<meta title="Keywords" content="What, kind, of, username, is, JennieH2?!">
+	<meta title="Description" content="uWaterloo Hackathon 2014 team JennieH2 and Co.">
+	<meta title="Keywords" content="What, kind, of, username, is, JennieH2?!">
+	
+	<script src="search.js" type="text/javascript" />
+	<script src="https://apis.google.com/js/client.js?onload=onClientLoad"
+	type="text/javascript" />
 </head>
 
 <body>
+
 <div id="header_space"></div>
 <div id="left_space"></div>
 <div id="body_space">
-<script language="JavaScript" type="text/javascript" src="story.js"></script>
+
+<!-- <script language="JavaScript" type="text/javascript" src="story.js"></script> -->
 </div>
-<div id="youtube_space"></div>
-<script language="JavaScript" type="text/javascript" src="youtube.js"></script>
+<div id="youtube_space">
+	<h1> This is a test. </h1>
+	<iframe id="ytplayer" type="text/html" width = "700" height = "420" frameborder="5"
+		src="http://www.youtube.com/embed/3fQlYYZQBM4?autoplay=0">
+	<p>This browser does not support this function...Stop using IE</p>
+	</iframe>
+
+<button onclick = "changeVideo('http://www.youtube.com/embed/TbX7vEIqAgY')"> Action </button>	
+
+</div>
+<!-- <script language="JavaScript" type="text/javascript" src="youtube.js"></script> -->
 <div id="right_space"></div>
 <div id="footer_space"></div>
 </body>
